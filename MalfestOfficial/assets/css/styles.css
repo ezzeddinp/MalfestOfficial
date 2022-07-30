@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 2.5rem;
 
   /*========== Colors ==========*/
   --hue: 14;
@@ -147,7 +147,7 @@ button{
   width: 100%;
   background: var(--body-color); 
   position: fixed;
-  top: -1%;
+  top: 0;
   left: 0;
   z-index: var(--z-fixed);
 }
@@ -156,10 +156,10 @@ button{
 .nav{
   height: var(--header-height);
   display: flex;
-  height: 15vh;
+  height: 8vh;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1%;
+  margin-top: 0%;
 }
 
 .nav__logo{
@@ -170,7 +170,7 @@ button{
 }
 
 .nav__logo-img{
-  width: 10rem;
+  width: 6rem;
 }
 
 .nav__link,
@@ -276,9 +276,17 @@ button{
   display: grid;
   position: relative;
   padding-top: 2rem;
+
 }
 
 .home__img{
+  height: 250px;
+  justify-self: center;
+  object-fit: cover;
+  min-width: 45vw;
+}
+
+.home__img1{
   height: 250px;
   justify-self: center;
 }
@@ -780,6 +788,10 @@ button{
 
   .home__img{
     height: 200px;
+    min-width: 50vw;
+  }
+  .home__img1 {
+    height: 200px;
   }
   .home__buttons{
     flex-direction: column;
@@ -843,6 +855,9 @@ button{
     gap: 4rem;
   }
   .home__img{
+    height: 300px;
+  }
+  .home__img1 {
     height: 300px;
   }
   .swiper-pagination{
@@ -927,6 +942,10 @@ button{
     height: 400px;
     transform: translateY(-3rem);
   }
+  .home__img1 {
+    height: 400px;
+    transform: translateY(-3rem);
+  }
   .home__indicator{
     top: initial;
     right: initial;
@@ -1008,6 +1027,9 @@ button{
   .home__img{
     height: 420px;
   }
+  .home__img1 {
+    height: 420px;
+  }
   .swiper-pagination{
     margin-top: var(--mb-2-5);
   }
@@ -1020,7 +1042,6 @@ button{
     left: -3%;
   }
 }
-
 /*=============== KEYFRAMES ===============*/
 @keyframes floating {
   0% { transform: translate(0,  0px); }
